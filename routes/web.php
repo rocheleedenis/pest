@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Counter;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Documentation';
 });
+
+Route::get('count', Counter::class);
